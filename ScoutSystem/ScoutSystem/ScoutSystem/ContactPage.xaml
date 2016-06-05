@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.ContactPage"
+             Title="Contact Page">
+
+  <StackLayout VerticalOptions="Center">
+    <Label Text="Tracked Player"/>
+    <Entry Text="{Binding ContactModel.ContactName, Mode=TwoWay}"/>
+    
+    <Label Text="Command"/>
+    <Entry Text="{Binding ContactModel.Introduction, Mode=TwoWay}"/>
+
+    <Button Text="Greet!"
+            Command="{Binding SaveCommand}"/>
+
+    <Label Text="{Binding Message}"/>
+  </StackLayout>
+</ContentPage>

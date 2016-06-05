@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.PlayerDetial"
+             Title="Player Detail"
+             BackgroundColor="White">
+  
+  <ListView x:Name="MainListView"
+           HasUnevenRows="True"
+           Header="">
+    <ListView.HeaderTemplate>
+      <DataTemplate>
+        <Grid Padding="12"
+              BackgroundColor="Yellow">
+          <Label Text="Player List"
+                 TextColor="Black"
+                 FontSize="20"/>
+        </Grid>
+      </DataTemplate>
+    </ListView.HeaderTemplate>
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Vertical">
+            <Grid BackgroundColor="White"
+                  HeightRequest="10"/>
+            <StackLayout Orientation="Vertical"
+                        Padding="20"
+                        BackgroundColor="Gray">
+              <Label Text="{Binding Name}" ></Label>
+              <Button Text="Contatct his coach "
+                      Clicked="ContactButton"
+                      BackgroundColor="Black"></Button>
+              <Button Text="Save in historylist"
+                      Clicked="HistoryButton"
+                      BackgroundColor="Black"></Button>
+            </StackLayout>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>

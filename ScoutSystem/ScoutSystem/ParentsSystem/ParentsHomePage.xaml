@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.ParentsSystem.ParentsHomePage"
+             BackgroundColor="White">
+
+          <StackLayout Orientation="Vertical">
+            <Grid BackgroundColor="White"
+                  HeightRequest="10"/>
+            <StackLayout Orientation="Vertical"
+                        Padding="50"
+                        BackgroundColor="White">
+              <Label x:Name="MainLabel"
+                     FontSize="35"
+                     TextColor="Gray"
+                     HorizontalOptions="Center"/>
+              <Grid Padding="0,0,0,50">
+              <Image Source="Child.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"></Image>
+              </Grid>
+              <Button Text="Check the pressure result of your child"
+                      Clicked="PressureButton_Onclicked"
+                      BackgroundColor="Navy"
+                      TextColor="White"></Button>
+
+              <Button Text="Check the comment of coach"
+                      BackgroundColor="Navy"
+                      TextColor="White"
+                      Clicked="CommentButton_Onclicked"></Button>
+              
+            </StackLayout>
+          </StackLayout>
+</ContentPage>

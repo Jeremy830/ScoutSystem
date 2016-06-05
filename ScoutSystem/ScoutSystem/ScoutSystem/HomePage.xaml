@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.HomePage"
+             BackgroundColor="White"
+             Title="Home Page">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Search"
+                 Clicked="SearchButton"
+                 Priority="0"
+                 Order="Secondary"
+                 />
+  </ContentPage.ToolbarItems>
+ 
+  
+  <ListView x:Name="MainListView"
+            HasUnevenRows="True"
+            Header="">
+    <ListView.HeaderTemplate>
+     <DataTemplate>
+       <Grid Padding="12"
+             BackgroundColor="Yellow">
+        <Label Text="Player List"
+               TextColor="Black"
+               FontSize="20"/>
+       </Grid>
+     </DataTemplate>
+    </ListView.HeaderTemplate>
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <ViewCell.ContextActions>
+            <MenuItem Text="Save"
+                      Clicked="Save_OnClicked"/>
+            <MenuItem Text="Delete"
+                     Clicked="Delete_OnClicked"/>
+          </ViewCell.ContextActions>
+          <StackLayout Orientation="Vertical">
+           <Grid BackgroundColor="White"
+                 HeightRequest="10"/>
+           <StackLayout Orientation="Vertical" 
+                       Padding="20"
+                       BackgroundColor="Transparent">
+             <Button Text="{Binding Name}"
+                     Clicked="PlayerNameButton_Onclicked"
+                     BackgroundColor="Silver"></Button>
+            <Label Text="{Binding Age}" 
+                   TextColor="Black"/>
+            <Label Text="{Binding Position}" 
+                   TextColor="Black"/>
+            <Label Text="{Binding Ability}"
+                   TextColor="Black"/>
+          </StackLayout>
+         </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+     </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

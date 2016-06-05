@@ -1,0 +1,15 @@
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\ScoutSystemiOS.exe
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\ScoutSystem.dll
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Core.dll
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.dll
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.iOS.dll
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Xaml.dll
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\ScoutSystem.pdb
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Core.xml
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\Xamarin.Forms.Xaml.xml
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\obj\iPhone\Release\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\obj\iPhone\Release\optimized\
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\obj\iPhone\Release\ScoutSystem.iOS.csprojResolveAssemblyReference.cache
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\obj\iPhone\Release\ScoutSystemiOS.exe
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\obj\iPhone\Release\ScoutSystemiOS.exe.mdb
+C:\Users\Ziyi\documents\visual studio 2015\Projects\ScoutSystem\ScoutSystem\ScoutSystem.iOS\bin\iPhone\Release\ScoutSystemiOS.exe.mdb

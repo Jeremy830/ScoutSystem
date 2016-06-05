@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.ParentsSystem.LinkPage"
+             BackgroundColor="White">
+
+  <StackLayout BackgroundColor="White"
+               Padding="50"
+               VerticalOptions="Center">
+    <Label Text="Name of your child"
+            TextColor="Black"/>
+    <Grid Padding="0,0,0,50">
+      <Entry x:Name="MainEntry"
+             BackgroundColor="Silver"/>
+    </Grid>
+    <Button Clicked="LinkButton_OnClicked"
+            Text="Validate Identity"
+            BackgroundColor="Navy"
+            TextColor="White"></Button>
+  </StackLayout>
+</ContentPage>

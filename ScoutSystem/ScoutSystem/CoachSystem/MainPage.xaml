@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.CoachSystem.MainPage"
+             xmlns:local="clr-namespace:ScoutSystem.ViewModel;assembly=ScoutSystem"
+             Title="HSL Color Scroll Page"
+             BackgroundColor="White">
+  
+  <ContentPage.BindingContext>
+    <local:CoachCommentViewModel/>
+  </ContentPage.BindingContext>
+
+  <StackLayout Padding="10, 0">
+
+    <Image Source="Sample.jpg" />
+
+    <Label TextColor="#77d065" FontSize = "20" Text="The comment from the coach is:" />
+
+    <Label Text ="{Binding Jade, Mode=TwoWay}"
+    		   BackgroundColor = "Red"
+            TextColor="White"/>
+    <Button x:Name="Comment" Text="Up Load Comment" IsEnabled="true"
+          	Clicked="OnCallHistory" />
+  </StackLayout>
+</ContentPage>

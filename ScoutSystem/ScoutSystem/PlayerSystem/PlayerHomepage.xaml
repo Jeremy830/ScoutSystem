@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.PlayerSystem.PlayerHomepage"
+             BackgroundColor="White">
+
+  <StackLayout Orientation="Vertical">
+    <Grid BackgroundColor="White"
+          HeightRequest="10"/>
+    <Grid Padding="0,0,20,0">
+    <Label Text="Tick items for testing"
+           FontSize="20"
+           TextColor="Purple"/>
+    </Grid>
+    <StackLayout Orientation="Horizontal"
+                 BackgroundColor="Silver"
+                 HeightRequest="50">
+      
+      <Label x:Name="EMGLabel"
+             Text="Electromyography (EMG)"
+             TextColor="Purple"
+             VerticalOptions="Center"
+             FontSize="15"/>
+      
+      <Grid Padding="50,0,0,0">
+      <Switch x:Name="emgSwitch"
+              HorizontalOptions="Center"/>
+      </Grid>
+      
+      <Label x:Name="emgLabel"
+             Text="{Binding IsToggled, Source={x:Reference emgSwitch}}"
+             TextColor="Purple"
+             HorizontalOptions="End"
+             VerticalOptions="Center"
+             FontSize="15"/>
+      
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"
+                BackgroundColor="Silver"
+                HeightRequest="50">
+
+      <Label x:Name="EDGLabel"
+             Text="Electrodermogram (EDG)"
+             TextColor="Purple"
+             VerticalOptions="Center"
+             FontSize="15"/>
+
+      <Grid Padding="50,0,0,0">
+        <Switch x:Name="edgSwitch"
+                HorizontalOptions="Center"/>
+      </Grid>
+
+        <Label x:Name="edgLabel"
+               Text="{Binding IsToggled, Source={x:Reference edgSwitch}}"
+               TextColor="Purple"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="15"/>
+
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"
+               BackgroundColor="Silver"
+               HeightRequest="50">
+
+      <Label x:Name="HRLabel"
+             Text="Heart Rate (HR)"
+             TextColor="Purple"
+             VerticalOptions="Center"
+             FontSize="15"/>
+
+      <Grid Padding="50,0,0,0">
+        <Switch x:Name="hrSwitch"
+                HorizontalOptions="Center"/>
+      </Grid>
+
+        <Label x:Name="hrLabel"
+               Text="{Binding IsToggled, Source={x:Reference hrSwitch}}"
+               TextColor="Purple"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="15"/>
+
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"
+              BackgroundColor="Silver"
+              HeightRequest="50">
+
+      <Label x:Name="HRVLabel"
+             Text="Heart Rate Variability (HRV)"
+             TextColor="Purple"
+             VerticalOptions="Center"
+             FontSize="15"/>
+
+      <Grid Padding="50,0,0,0">
+        <Switch x:Name="hrvSwitch"
+                HorizontalOptions="Center"/>
+      </Grid>
+
+        <Label x:Name="hrvLabel"
+               Text="{Binding IsToggled, Source={x:Reference hrvSwitch}}"
+               TextColor="Purple"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="15"/>
+
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"
+             BackgroundColor="Silver"
+             HeightRequest="50">
+
+      <Label x:Name="PFTLabel"
+             Text="Physical Fitness Test"
+             TextColor="Purple"
+             VerticalOptions="Center"
+             FontSize="15"/>
+
+      <Grid Padding="50,0,0,0">
+        <Switch x:Name="pftSwitch"
+                HorizontalOptions="Center"/>
+      </Grid>
+
+        <Label x:Name="pftLabel"
+               Text="{Binding IsToggled, Source={x:Reference pftSwitch}}"
+               TextColor="Purple"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               FontSize="15"/>
+        
+    </StackLayout>
+    <Grid Padding="100,50,100,0">
+    <Button Text="Start Test"
+            Clicked="StartTestButton_Onclicked"
+            BackgroundColor="Purple"
+            TextColor="Black"></Button>
+    </Grid>
+  </StackLayout>   
+
+</ContentPage>

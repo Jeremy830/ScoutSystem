@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScoutSystem.UI"
+             BackgroundColor="White"
+             Title="Body Tag">
+
+  <ListView x:Name="MainListView"
+           HasUnevenRows="True">
+
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Vertical">
+            <Grid BackgroundColor="White"
+                  HeightRequest="10"/>
+            <StackLayout Orientation="Vertical"
+                        Padding="50"
+                        BackgroundColor="White">
+              <Image Source="target.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"></Image>
+              <Button Text="{Binding Scout}"
+                      Clicked="ScoutButton_Onclicked"
+                      BackgroundColor="Yellow"
+                      TextColor="Black"></Button>
+              <Image Source="folder.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"></Image>
+              <Button Text="{Binding Coach}"
+                      BackgroundColor="Yellow"
+                      TextColor="Black"
+                      Clicked="CoachButton_Onclicked"></Button>
+              <Image Source="footplayer.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"></Image>
+              <Button Text="{Binding Player}"
+                      BackgroundColor="Yellow"
+                      TextColor="Black"
+                      Clicked="PlayerButton_Onclicked"></Button>
+              <Image Source="maid.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"></Image>
+              <Button Text="{Binding Parents}"
+                      BackgroundColor="Yellow"
+                      TextColor="Black"
+                      Clicked="ParentsButton_Onclicked"></Button>
+            </StackLayout>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
